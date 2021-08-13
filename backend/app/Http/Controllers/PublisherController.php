@@ -23,7 +23,7 @@ class PublisherController extends Controller
         $publisher->cnpj = $request->cnpj;
 
         $rules=array(
-            "name"=>"required",
+            "publisher_name"=>"required",
             "cnpj"=>"required",
         );
 
@@ -53,7 +53,7 @@ class PublisherController extends Controller
 
 
         $rules=array(
-            "name"=>"required",
+            "publisher_name"=>"required",
             "cnpj"=>"required",
         );
 

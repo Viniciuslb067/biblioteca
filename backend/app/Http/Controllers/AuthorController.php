@@ -13,7 +13,7 @@ class AuthorController extends Controller
     public function index()
     {
         $name = "Vinicius";
-        $query = DB::table("authors")->find(21);
+        $query = DB::table("authors")->get();
 
         return response()->json([ "users" => $query ]);
     }
@@ -22,13 +22,13 @@ class AuthorController extends Controller
     {
         $author = new Author();
      
-        $author->name = $request->name;
+        $author->author_name = $request->author_name;
         $author->birthDate = $request->birthDate;
         $author->sex = $request->sex;
         $author->nationality = $request->nationality;
 
         $rules=array(
-            "name"=>"required",
+            "author_name"=>"required",
             "birthDate"=>"required",
             "sex"=>"required",
             "nationality"=>"required"
