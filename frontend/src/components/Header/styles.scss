@@ -1,0 +1,84 @@
+.mainContent {
+  margin-left: 280px;
+  transition: all 500ms ease-in-out;
+  header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    position: fixed;
+    left: 280px;
+    width: calc(100% - 280px);
+    top: 0;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 500ms ease-in-out;
+  }
+}
+
+.mainContentHide {
+  margin-left: 0;
+  transition: all 500ms ease-in-out;
+
+  header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: #fff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 500ms ease-in-out;
+  }
+}
+
+.menuToggle {
+  label {
+    height: 60px;
+    width: 60px;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.headerIcons {
+  button {
+    outline: none;
+    color: #fff;
+    background: #3333;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 3px;
+    font-size: 1.15rem;
+
+    &:hover {
+      background: #333;
+    }
+  }
+}
+
+@media only screen and (max-width: 1124px) {
+  .mainContent {
+    margin-left: 0;
+
+    header {
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  .mainContentHide {
+    left: 0;
+  }
+}

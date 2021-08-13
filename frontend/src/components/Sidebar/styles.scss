@@ -1,0 +1,127 @@
+.sidebar {
+  width: 280px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding: 1rem 1.5rem;
+  background: #55a8fd;
+  color: #fff;
+  z-index: 20;
+  transition: all 500ms ease-in-out;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+}
+
+.sidebarHide {
+  width: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #55a8fd;
+  color: #fff;
+  z-index: 20;
+  transition: all 500ms ease-in-out;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+}
+
+.sidebarBrand {
+  height: 70px;
+}
+
+.brandFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brandIcons span {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.sidebarUser {
+  margin: 1rem 0rem 1rem 0rem;
+  text-align: center;
+
+  img {
+    width: 130px;
+    height: 130px;
+  }
+
+  div {
+    h3 {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: white;
+      text-transform: capitalize;
+    }
+
+    span {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.sidebarMenu {
+  margin-top: 1rem;
+}
+
+.menuHead {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+
+  span {
+    font-family: Roboto, sans-serif;
+    color: #fff;
+  }
+
+}
+
+.sidebarMenu {
+  ul {
+    margin-bottom: 1.75rem;
+  }
+
+  li {
+    margin-bottom: 1.35rem;
+
+    a {
+      color: #fff;
+      font-size: 1rem;
+      font-family: Roboto, sans-serif;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        color: white;
+        cursor: pointer;
+        filter: brightness(0.8);
+      }
+
+      span {
+        font-size: 1.5rem;
+        display: inline-block;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+
+.imgOpen {
+  transition: all 900ms ease-in-out;
+}
+
+.imgClose {
+  display: none;
+  transition: display 300ms ease-in-out;
+}
+
+@media only screen and (max-width: 1124px) {
+ 
+}
